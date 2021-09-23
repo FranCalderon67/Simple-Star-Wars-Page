@@ -1,0 +1,54 @@
+/* Inicio Navbar */
+@import "_sizes.scss";
+#nav-color {
+  font-size: 25px;
+  color: #ffffff;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.navFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: solid 0.5px #ffffff;
+  border-bottom: solid 0.5px #ffffff;
+}
+
+.nav-link {
+  border-left: solid 0.5px #ffffff;
+  border-right: solid 0.5px #ffffff;
+
+  @media (max-width: #{$tablet}) {
+    border-left: unset;
+    border-right: unset;
+    justify-content: start;
+  }
+  @media (max-width:#{$mobile}) {
+    border-left: unset;
+    border-right: unset;
+    justify-content: start;
+  }
+}
+
+.btn-dark {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: unset;
+  border: unset;
+  border-color: unset;
+  margin-left: 1.5rem;
+}
+
+.gridHead {
+  display: grid;
+  grid-template-areas: "logo";
+  justify-items: center;
+
+  .logo {
+    grid-area: logo;
+    height: fit-content;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,58 @@
+.errorGrid {
+  display: grid;
+  grid-template-areas: "texto imagen";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+
+  .errorTexto {
+    font-family: "IM Fell Double Pica", serif;
+    font-size: 50px;
+    grid-area: texto;
+
+    @media (max-width: #{$tablet}) {
+      font-size: 25px;
+    }
+    @media (max-width:#{$mobile}) {
+      font-size: 15px;
+    }
+
+    .homeButton {
+      font-size: 50px;
+      width: fit-content;
+      background-image: url(../imagenes/BG__site.jpeg);
+      box-shadow: 0 4px 8px 5px green, 0 6px 20px 8px green;
+      @media (max-width: #{$tablet}) {
+        font-size: 25px;
+        box-shadow: 0 4px 8px 0 turquoise, 0 6px 20px 0 turquoise;
+      }
+      @media (max-width:#{$mobile}) {
+        font-size: 15px;
+        box-shadow: 0 4px 8px 0 blue, 0 6px 20px 0 blue;
+      }
+    }
+  }
+
+  .errorImg {
+    margin: 2rem 0 0 0;
+    grid-area: imagen;
+    height: 570px;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red;
+    border-radius: 1rem;
+    @media (max-width: #{$tablet}) {
+      height: 450px;
+    }
+    @media (max-width:#{$mobile}) {
+      height: 350px;
+    }
+  }
+  @media (max-width:#{$mobile}) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "texto"
+      "imagen";
+    margin: 4rem 1rem 0 1rem;
+  }
+}

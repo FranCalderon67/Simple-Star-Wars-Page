@@ -1,0 +1,14 @@
+@mixin fullSize($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin minSize() {
+  height: 33%;
+  width: 33%;
+}
+
+$full-screen: 2560px;
+$laptop: ($full-screen)-1536px;
+$tablet: ($full-screen)-1792px;
+$mobile: ($full-screen)-2135px;

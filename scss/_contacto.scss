@@ -1,0 +1,79 @@
+@import "_sizes.scss";
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  .flexContainer__item {
+    width: fit-content;
+  }
+
+  .flexContainer__item-modificador {
+    background-color: #000000;
+    margin: 16px;
+    @media (max-width:#{$tablet}) {
+      @include fullSize(100%, 100%);
+    }
+    @media (max-width: #{$mobile}) {
+      @include fullSize(100%, 100%);
+    }
+  }
+}
+
+.halcon {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  animation-name: vuelo;
+  animation-duration: 2s;
+  opacity: 0;
+  z-index: -1;
+  @media (max-width: #{$laptop}) {
+    width: 500px;
+  }
+  @media (max-width:#{$tablet}) {
+    width: 350px;
+  }
+}
+
+@keyframes vuelo {
+  0% {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(-250px);
+  }
+  50% {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(500px);
+  }
+
+  100% {
+    z-index: 1;
+    transform: translateX(840px);
+  }
+}
+
+.boton {
+  margin: 1rem 1rem 0 0;
+  min-width: 130px;
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  background: #343a40;
+
+  .boton-modificador {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+  }
+}

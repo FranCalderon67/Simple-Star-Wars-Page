@@ -1,0 +1,165 @@
+@import "_sizes.scss";
+
+.flexImg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(39, 37, 37);
+
+  .cardInside {
+    position: relative;
+    @include minSize();
+    background-color: rgb(39, 37, 37);
+    border: unset;
+    .cardFront,
+    .cardBack {
+      border-radius: 1rem;
+      padding: 1rem;
+      background-color: rgb(39, 37, 37);
+      position: relative;
+      transition: ease-in-out 1s;
+      transform-style: preserve-3d;
+      @media (max-width: #{$laptop}) {
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: rgb(39, 37, 37);
+        position: relative;
+        transition: ease-in-out 1s;
+        transform-style: preserve-3d;
+      }
+      @media (max-width: #{$tablet}) {
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: rgb(39, 37, 37);
+        position: relative;
+        transition: ease-in-out 1s;
+        transform-style: preserve-3d;
+      }
+      @media (max-width: #{$mobile}) {
+        border-radius: 1rem;
+        background-color: rgb(39, 37, 37);
+        position: relative;
+        transition: unset;
+        transform-style: unset;
+      }
+    }
+
+    .cardFront {
+      z-index: 10;
+      padding: 1.5rem;
+      @media (max-width: #{$laptop}) {
+        z-index: 10;
+        padding: 1.5rem;
+      }
+      @media (max-width: #{$mobile}) {
+        z-index: 10;
+        padding: 0;
+        transition: unset;
+        transform: unset;
+      }
+    }
+
+    .cardBack {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: ease-in-out 1s;
+      transform: rotateY(-180deg);
+      padding: 1.5rem;
+      @media (max-width: #{$laptop}) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: ease-in-out 1s;
+        transform: rotateY(-180deg);
+        padding: 1rem;
+      }
+      @media (max-width: #{$mobile}) {
+        padding: 0rem;
+        transform: unset;
+      }
+    }
+    .cardImg {
+      width: 100%;
+      border-radius: 1rem;
+      transform: translateZ(1.5rem);
+      @media (max-width: #{$laptop}) {
+        width: 100%;
+        border-radius: 1rem;
+        transform: translateZ(1.5rem);
+      }
+      @media (max-width: #{$tablet}) {
+        width: 100%;
+        border-radius: 1rem;
+        transform: translateZ(1.5rem);
+      }
+      @media (max-width: #{$mobile}) {
+        width: 100%;
+        border-radius: 1rem;
+        transform: unset;
+      }
+    }
+    .cardTitle {
+      font-size: 2rem;
+      margin: 1.5rem 0 0.5rem;
+      color: #ffffff;
+      font-weight: 700;
+      @media (max-width: #{$laptop}) {
+        font-size: 2rem;
+        margin: 1.5rem 0 0.5rem;
+        color: #ffffff;
+        font-weight: 700;
+      }
+      @media (max-width: #{$tablet}) {
+        font-size: 1rem;
+        margin: 1.5rem 0 0.5rem;
+        color: #ffffff;
+        font-weight: 700;
+      }
+      @media (max-width: #{$mobile}) {
+        font-size: 1rem;
+        margin: 1.5rem 0 0.5rem;
+        color: #ffffff;
+        font-weight: 700;
+        display: none;
+      }
+    }
+    @media (max-width: #{$laptop}) {
+      position: relative;
+      width: 50%;
+      font-size: 1rem;
+    }
+    @media (max-width: #{$tablet}) {
+      position: relative;
+      width: 50%;
+      font-size: 14px;
+    }
+    @media (max-width: #{$mobile}) {
+      position: relative;
+      width: 100%;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-top: 10px;
+      word-wrap: unset;
+    }
+  }
+  :hover > .cardBack {
+    transform: rotateY(0deg);
+    transition: ease-in-out 1s;
+    z-index: 10;
+  }
+  :hover > .cardFront {
+    transform: rotateY(180deg);
+    transition: ease-in-out 1s;
+    z-index: -1;
+  }
+
+  @media (max-width: #{$mobile}) {
+    display: flex;
+    flex-direction: column;
+  }
+}

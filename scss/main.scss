@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+
+  body {
+    background-image: url(../imagenes/BG__site.jpeg);
+  }
+
+  /*Margen General de contenido*/
+  main section {
+    margin: 0 3.5rem 2rem 3.5rem;
+  }
+}
+
+h1 {
+  margin: 2rem 0 2rem 0;
+  font-family: "IM Fell Double Pica", serif;
+  font-weight: 750;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container {
+  font-family: "Hahmlet", serif;
+  word-spacing: 2mm;
+  margin-left: 1rem;
+  font-size: 16px;
+  font-weight: 1000;
+}
+
+@import "_nav.scss";
+@import "_inicio.scss";
+@import "_footer.scss";
+@import "_peliculas.scss";
+@import "_personajes.scss";
+@import "_contacto.scss";
+@import "_musica.scss";
+@import "_pagina404.scss";

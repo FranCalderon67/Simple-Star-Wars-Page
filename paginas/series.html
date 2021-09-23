@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords"
+    content="STAR WARS, GUERRA DE LAS GALAXIAS, PERSONAJES, HISTORIA, PELICULAS, SERIES, MUSICA, DARTH VADER, SKYWALKER, HAN SOLO, JEDI, STORMTROOPER">
+  <meta name="description"
+    content="Resumen de la historia de Star Wars, incluyendo peliculas, series, musica y personajes de toda la saga. Encontraras el orden en el que ver todas las peliculas y descripciones de los personajes principales">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap" rel="stylesheet">
+  <title>Star Wars</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="gridHead">
+      <a class="navbar-brand logo" href="../index.html"><img class="animate__animated animate__flip"
+          src="../imagenes/logo.png"></a>
+    </div>
+    <div class="navFlex">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="bg-black">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../paginas/peliculas.html"
+                  id="nav-color">Películas</a>
+              </li>
+              <li class=" nav-item">
+                <a class="nav-link active" aria-current="page" href="../paginas/series.html" id="nav-color">Series</a>
+              </li>
+              <li class=" nav-item">
+                <a class="nav-link active" aria-current="page" href="../paginas/musica.html" id="nav-color">Música</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Personajes
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="../paginas/personajes.html">Jedi</a></li>
+                    <li><a class="dropdown-item" href="../paginas/personajes.html">Lord Sith</a></li>
+                    <li><a class="dropdown-item" href="../paginas/personajes.html">Personajes Legendarios</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class=" nav-item">
+                <a class="nav-link active" aria-current="page" href="../paginas/contacto.html"
+                  id="nav-color">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--Carousel-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="../imagenes/image1.jpg" class="d-block w-100" alt="ERROR">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="../imagenes/image2.jpg" class="d-block w-100" alt="ERROR">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="../imagenes/image3.jpg" class="d-block w-100" alt="ERROR">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+
+  <main>
+    <section>
+      <h1>Series más renombradas.</h1>
+      <!--Flex para separar en filas las series-->
+
+      <div>
+
+        <div class="gridPeliculas">
+
+          <h1 class="gridPeliculas__gridPortada">Portada</h1>
+
+          <h1 class="gridPeliculas__gridDescripcion">Descripción</h1>
+
+          <h1 class="gridPeliculas__gridPreview">Preview</h1>
+
+
+
+          <img class="gridPeliculas__gridImagen" src="../imagenes/mando.jpg" alt="ERROR">
+
+
+          <p class="gridPeliculas__gridTexto">The Mandalorian es una serie de televisión de Star Wars acción en vivo
+            desarrollada por Lucasfilm. La serie toma lugar alrededor de cinco años después de los eventos de Star Wars:
+            Episodio VI El Retorno del Jedi y se emite exclusivamente en el nuevo servicio de transmisión de Disney
+            llamado Disney+, el cual comenzó el 12 de noviembre de 2019.Después de las historias de Jango y Boba Fett,
+            otro guerrero emerge en el universo Star Wars.
+
+            Está establecida después de la caída del Imperio y antes de la aparición de la Primera Orden. Seguimos los
+            viajes de un pistolero solitario en las extensiones exteriores de la galaxia lejos de la autoridad de la
+            Nueva República...
+          </p>
+
+          <iframe class="gridPeliculas__gridVideo" width="360" height="450"
+            src="https://www.youtube.com/embed/IqZ48OcUHD8" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+        <div class="gridPeliculas">
+
+          <img class="gridPeliculas__gridImagen" src="../imagenes/clones.jpg" alt="ERROR">
+
+          <p class="gridPeliculas__gridTexto">Star Wars: The Clone Wars, también conocida como Star Wars: La Guerra de
+            los Clones es una serie de televisión animada ambientada entre los sucesos de de Star Wars: Episodio II El
+            Ataque de los Clones y Star Wars: Episodio III La Venganza de los Sith. La serie se emitió en Cartoon
+            Network durante cinco temporadas entre 2008 y 2013, mientras que una breve sexta temporada se lanzó a través
+            de Netflix en 2014. El 19 de julio de 2018, se anunció que se producirían doce episodios más para el
+            servicio de streaming Disney+, que fueron estrenados a partir de febrero de 2020 y finalizados el 4 de mayo
+            de 2020.
+          </p>
+          <iframe class="gridPeliculas__gridVideo" width="360" height="450"
+            src="https://www.youtube.com/embed/3CJUjxfQagA" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+
+        <div class="gridPeliculas">
+          <img class="gridPeliculas__gridImagen" src="../imagenes/badbatch.jpg" alt="ERROR">
+
+
+          <p class="gridPeliculas__gridTexto">La serie sigue a los clones experimentales y de élite del Lote Malo
+            (presentados por primera vez en The Clone Wars) mientras encuentran su camino en una galaxia que cambia
+            rápidamente inmediatamente después del final de las Guerras Clon. Los miembros del Lote Malo, un escuadrón
+            único de clones que varían genéticamente de sus hermanos en el Ejército Clon, poseen cada uno una habilidad
+            excepcional y singular, lo que los convierte en soldados extraordinariamente efectivos y en un equipo
+            formidable. En la era posterior a las Guerras Clon, emprenderán audaces misiones mercenarias mientras luchan
+            por mantenerse a flote y encontrar un nuevo propósito.
+          </p>
+
+          <iframe class="gridPeliculas__gridVideo" width="360" height="450"
+            src="https://www.youtube.com/embed/xjUu9Woqzvg" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+
+      </div>
+      </div>
+
+    </section>
+  </main>
+  <a href="#header">
+    <img class="arriba"
+      src="data:image/svg+xml;base64,PHN2ZyBpZD0iYm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyIDBjLTYuNjI3IDAtMTIgNS4zNzMtMTIgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTItNS4zNzMtMTItMTItMTJ6bTQuOTI0IDEwLjM4M2MtLjE1NS4zNzMtLjUyLjYxNy0uOTI0LjYxN2gtM3Y3YzAgLjU1Mi0uNDQ4IDEtMSAxcy0xLS40NDgtMS0xdi03aC0zYy0uNDA0IDAtLjc2OS0uMjQ0LS45MjQtLjYxNy0uMTU1LS4zNzQtLjA2OS0uODA0LjIxNy0xLjA5bDQtNGMuMzkxLS4zOTEgMS4wMjMtLjM5MSAxLjQxNCAwbDQgNGMuMjg2LjI4Ni4zNzIuNzE2LjIxNyAxLjA5eiIvPjwvc3ZnPg=="
+      alt="ERROR" />
+  </a>
+  <section>
+    <footer>
+
+      <!--Flex para posicionar imagenes de redes-->
+
+      <div class="footerFlex">
+        <a href="https://wa.link/yydlfp" target="_blank"> <img class="footerFlex__item"
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6IzRDQUY1MDsiIGQ9Ik0yNTYuMDY0LDBoLTAuMTI4bDAsMEMxMTQuNzg0LDAsMCwxMTQuODE2LDAsMjU2YzAsNTYsMTguMDQ4LDEwNy45MDQsNDguNzM2LDE1MC4wNDhsLTMxLjkwNCw5NS4xMDQNCglsOTguNC0zMS40NTZDMTU1LjcxMiw0OTYuNTEyLDIwNCw1MTIsMjU2LjA2NCw1MTJDMzk3LjIxNiw1MTIsNTEyLDM5Ny4xNTIsNTEyLDI1NlMzOTcuMjE2LDAsMjU2LjA2NCwweiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZBRkFGQTsiIGQ9Ik00MDUuMDI0LDM2MS41MDRjLTYuMTc2LDE3LjQ0LTMwLjY4OCwzMS45MDQtNTAuMjQsMzYuMTI4Yy0xMy4zNzYsMi44NDgtMzAuODQ4LDUuMTItODkuNjY0LTE5LjI2NA0KCUMxODkuODg4LDM0Ny4yLDE0MS40NCwyNzAuNzUyLDEzNy42NjQsMjY1Ljc5MmMtMy42MTYtNC45Ni0zMC40LTQwLjQ4LTMwLjQtNzcuMjE2czE4LjY1Ni01NC42MjQsMjYuMTc2LTYyLjMwNA0KCWM2LjE3Ni02LjMwNCwxNi4zODQtOS4xODQsMjYuMTc2LTkuMTg0YzMuMTY4LDAsNi4wMTYsMC4xNiw4LjU3NiwwLjI4OGM3LjUyLDAuMzIsMTEuMjk2LDAuNzY4LDE2LjI1NiwxMi42NA0KCWM2LjE3NiwxNC44OCwyMS4yMTYsNTEuNjE2LDIzLjAwOCw1NS4zOTJjMS44MjQsMy43NzYsMy42NDgsOC44OTYsMS4wODgsMTMuODU2Yy0yLjQsNS4xMi00LjUxMiw3LjM5Mi04LjI4OCwxMS43NDQNCgljLTMuNzc2LDQuMzUyLTcuMzYsNy42OC0xMS4xMzYsMTIuMzUyYy0zLjQ1Niw0LjA2NC03LjM2LDguNDE2LTMuMDA4LDE1LjkzNmM0LjM1Miw3LjM2LDE5LjM5MiwzMS45MDQsNDEuNTM2LDUxLjYxNg0KCWMyOC41NzYsMjUuNDQsNTEuNzQ0LDMzLjU2OCw2MC4wMzIsMzcuMDI0YzYuMTc2LDIuNTYsMTMuNTM2LDEuOTUyLDE4LjA0OC0yLjg0OGM1LjcyOC02LjE3NiwxMi44LTE2LjQxNiwyMC0yNi40OTYNCgljNS4xMi03LjIzMiwxMS41ODQtOC4xMjgsMTguMzY4LTUuNTY4YzYuOTEyLDIuNCw0My40ODgsMjAuNDgsNTEuMDA4LDI0LjIyNGM3LjUyLDMuNzc2LDEyLjQ4LDUuNTY4LDE0LjMwNCw4LjczNg0KCUM0MTEuMiwzMjkuMTUyLDQxMS4yLDM0NC4wMzIsNDA1LjAyNCwzNjEuNTA0eiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+            alt="ERROR" />
+        </a>
+        <a href="https://t.me/FranCalders" target="_blank">
+          <img class="footerFlex__item"
+            src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiBmaWxsPSIjMDM5YmU1IiByPSIxMiIvPjxwYXRoIGQ9Im01LjQ5MSAxMS43NCAxMS41Ny00LjQ2MWMuNTM3LS4xOTQgMS4wMDYuMTMxLjgzMi45NDNsLjAwMS0uMDAxLTEuOTcgOS4yODFjLS4xNDYuNjU4LS41MzcuODE4LTEuMDg0LjUwOGwtMy0yLjIxMS0xLjQ0NyAxLjM5NGMtLjE2LjE2LS4yOTUuMjk1LS42MDUuMjk1bC4yMTMtMy4wNTMgNS41Ni01LjAyM2MuMjQyLS4yMTMtLjA1NC0uMzMzLS4zNzMtLjEyMWwtNi44NzEgNC4zMjYtMi45NjItLjkyNGMtLjY0My0uMjA0LS42NTctLjY0My4xMzYtLjk1M3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
+            alt="ERROR" />
+        </a>
+        <a href="https://www.linkedin.com/in/francalders67/" target="_blank">
+          <img class="footerFlex__item"
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDExMi4xOTYgMTEyLjE5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTEyLjE5NiAxMTIuMTk2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiMwMDdBQjk7IiBjeD0iNTYuMDk4IiBjeT0iNTYuMDk3IiByPSI1Ni4wOTgiLz4NCgk8Zz4NCgkJPHBhdGggc3R5bGU9ImZpbGw6I0YxRjJGMjsiIGQ9Ik04OS42MTYsNjAuNjExdjIzLjEyOEg3Ni4yMDdWNjIuMTYxYzAtNS40MTgtMS45MzYtOS4xMTgtNi43OTEtOS4xMTgNCgkJCWMtMy43MDUsMC01LjkwNiwyLjQ5MS02Ljg3OCw0LjkwM2MtMC4zNTMsMC44NjItMC40NDQsMi4wNTktMC40NDQsMy4yNjh2MjIuNTI0SDQ4LjY4NGMwLDAsMC4xOC0zNi41NDYsMC00MC4zMjloMTMuNDExdjUuNzE1DQoJCQljLTAuMDI3LDAuMDQ1LTAuMDY1LDAuMDg5LTAuMDg5LDAuMTMyaDAuMDg5di0wLjEzMmMxLjc4Mi0yLjc0Miw0Ljk2LTYuNjYyLDEyLjA4NS02LjY2Mg0KCQkJQzgzLjAwMiw0Mi40NjIsODkuNjE2LDQ4LjIyNiw4OS42MTYsNjAuNjExTDg5LjYxNiw2MC42MTF6IE0zNC42NTYsMjMuOTY5Yy00LjU4NywwLTcuNTg4LDMuMDExLTcuNTg4LDYuOTY3DQoJCQljMCwzLjg3MiwyLjkxNCw2Ljk3LDcuNDEyLDYuOTdoMC4wODdjNC42NzcsMCw3LjU4NS0zLjA5OCw3LjU4NS02Ljk3QzQyLjA2MywyNi45OCwzOS4yNDQsMjMuOTY5LDM0LjY1NiwyMy45NjlMMzQuNjU2LDIzLjk2OXoNCgkJCSBNMjcuODY1LDgzLjczOUg0MS4yN1Y0My40MDlIMjcuODY1VjgzLjczOXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="
+            alt="ERROR" />
+        </a>
+        <a href="mailto:franciscocalderon1990@gmail.com" target="_blank">
+          <img class="footerFlex__item"
+            src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTAgNTEwIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMCA1MTAiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMjE4Ljk3MyIgeDI9IjM4MC4yNyIgeTE9IjE1OC4zMzYiIHkyPSI1MDQuNjA4Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlM2U1ZTQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjYmQwZTQiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGcxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlYmVmZjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlM2U1ZTQiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMl8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMjA3LjA0MyIgeDI9IjI5MC4zNTMiIHhsaW5rOmhyZWY9IiNsZzEiIHkxPSIzODEuNjQ3IiB5Mj0iNDY0Ljk1NyIvPjxsaW5lYXJHcmFkaWVudCBpZD0ibGcyIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNjYmQwZTQiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZhN2Q4MyIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8zXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNTUiIHgyPSIyNTUiIHhsaW5rOmhyZWY9IiNsZzIiIHkxPSIzOTUuMDk3IiB5Mj0iNDgwLjY0NSIvPjxsaW5lYXJHcmFkaWVudCBpZD0ibGczIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjYzN2IiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmOTAyMTciLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfNF8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTcuMzMzIiB4Mj0iNTguMDIyIiB4bGluazpocmVmPSIjbGczIiB5MT0iMjU1IiB5Mj0iMjU1Ii8+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF81XyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI0MTkuOTU5IiB4Mj0iMzU3LjI5MiIgeGxpbms6aHJlZj0iI2xnMiIgeTE9IjI1NC4wNTIiIHkyPSIxODguMDUyIi8+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF82XyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI0ODMuMzMzIiB4Mj0iNTE0LjY2NyIgeGxpbms6aHJlZj0iI2xnMyIgeTE9IjI1NSIgeTI9IjI1NSIvPjxsaW5lYXJHcmFkaWVudCBpZD0ibGc0Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmOTAyMTciIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iLjI2NjkiIHN0b3AtY29sb3I9IiNlNzAxMGYiIHN0b3Atb3BhY2l0eT0iLjI2NyIvPjxzdG9wIG9mZnNldD0iLjcyMzIiIHN0b3AtY29sb3I9IiNjZTAwMDQiIHN0b3Atb3BhY2l0eT0iLjcyMyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2M1MDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF83XyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI1MDAuNzY3IiB4Mj0iNDU4Ljc2NyIgeGxpbms6aHJlZj0iI2xnNCIgeTE9IjE2OS41NDgiIHkyPSIxMjIuMDQ4Ii8+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF84XyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSA5NzEuMjMzIDApIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9Ijk2MiIgeDI9IjkyMCIgeGxpbms6aHJlZj0iI2xnNCIgeTE9IjE2OS41NDgiIHkyPSIxMjIuMDQ4Ii8+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF85XyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyMzQuNDA2IiB4Mj0iMzQ2LjE4OSIgeGxpbms6aHJlZj0iI2xnMSIgeTE9IjU0LjA2MSIgeTI9IjE4OS42OTEiLz48bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzEwXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNjEuMDI2IiB4Mj0iMzkwLjM2IiB4bGluazpocmVmPSIjbGczIiB5MT0iOTAuNTc0IiB5Mj0iMzA4LjU3NCIvPjxnPjxwYXRoIGQ9Im00NjIuMzkzIDQ1OS4yODJoLTQxNC43ODZjLTE2LjM1MSAwLTI5LjYwNy0xMy4yNTYtMjkuNjA3LTI5LjYwOGwtMTgtMzQ5LjM0OWMwLTE2LjM1MiAxMy4yNTYtMjkuNjA3IDI5LjYwNy0yOS42MDdoNDUwLjc4NWMxNi4zNTIgMCAyOS42MDcgMTMuMjU2IDI5LjYwNyAyOS42MDdsLTE4IDM0OS4zNDljLjAwMSAxNi4zNTItMTMuMjU1IDI5LjYwOC0yOS42MDYgMjkuNjA4eiIgZmlsbD0idXJsKCNTVkdJRF8xXykiLz48cGF0aCBkPSJtNDgwLjM5MyA0NTkuMjgyaC00NTAuNzg2Yy0xNi4zNTEgMC0yOS42MDctMTMuMjU2LTI5LjYwNy0yOS42MDggMC04LjI1OCAzLjQxLTE2LjE0OSA5LjQyMy0yMS44MDhsMjIyLjU4NS0yMDkuNDY1YzEyLjkxOC0xMi4xNTYgMzMuMDY2LTEyLjE1NiA0NS45ODQgMGwyMjIuNTg1IDIwOS40NjVjNi4wMTQgNS42NTkgOS40MjMgMTMuNTUgOS40MjMgMjEuODA4IDAgMTYuMzUyLTEzLjI1NiAyOS42MDgtMjkuNjA3IDI5LjYwOHoiIGZpbGw9InVybCgjU1ZHSURfMl8pIi8+PHBhdGggZD0ibTQuMjM1IDM1Mi45NjN2NzYuNzExYzAgMTYuMzUyIDEzLjAzNiAyOS42MDcgMjkuMTE2IDI5LjYwN2g0NDMuMjk4YzE2LjA4IDAgMjkuMTE2LTEzLjI1NiAyOS4xMTYtMjkuNjA3di03Ni43MTF6IiBmaWxsPSJ1cmwoI1NWR0lEXzNfKSIvPjxwYXRoIGQ9Im0wIDgwLjMyNnYzNDkuMzQ5YzAgMTYuMzUyIDEzLjI1NiAyOS42MDcgMjkuNjA3IDI5LjYwN2gxOS4xNnYtNDA4LjU2NGgtMTkuMTZjLTE2LjM1MSAwLTI5LjYwNyAxMy4yNTYtMjkuNjA3IDI5LjYwOHoiIGZpbGw9InVybCgjU1ZHSURfNF8pIi8+PHBhdGggZD0ibTEwLjQyMyAxMDIuMTMzIDM4MS41NzcgMzU3LjE0OWg4OC4zOTNjMTYuMzUyIDAgMjkuNjA3LTEzLjI1NiAyOS42MDctMjkuNjA3di0zNDkuMzQ5YzAtMTYuMzUyLTEzLjI1Ni0yNy42MDctMjkuNjA3LTI3LjYwN2gtNDUwLjc4NmMtMTYuMzUxLS4wMDEtMjguNjA3IDExLjI1NS0yOC42MDcgMjcuNjA3IDAgOC4yNTcgMy40MSAxNi4xNDggOS40MjMgMjEuODA3eiIgZmlsbD0idXJsKCNTVkdJRF81XykiLz48cGF0aCBkPSJtNTEwIDgwLjMyNnYzNDkuMzQ5YzAgMTYuMzUyLTEzLjI1NiAyOS42MDctMjkuNjA3IDI5LjYwN2gtMTkuMTZ2LTQwOC41NjRoMTkuMTZjMTYuMzUxIDAgMjkuNjA3IDEzLjI1NiAyOS42MDcgMjkuNjA4eiIgZmlsbD0idXJsKCNTVkdJRF82XykiLz48cGF0aCBkPSJtNDgwLjM5MyA1Mi43MThoLTE5LjE2djE4MC45OTZoNDguNzY3di0xNTEuMzg4YzAtMTYuMzUyLTEzLjI1Ni0yOS42MDgtMjkuNjA3LTI5LjYwOHoiIGZpbGw9InVybCgjU1ZHSURfN18pIi8+PHBhdGggZD0ibTI5LjYwNyA1Mi43MThoMTkuMTZ2MTgwLjk5NmgtNDguNzY3di0xNTEuMzg4YzAtMTYuMzUyIDEzLjI1Ni0yOS42MDggMjkuNjA3LTI5LjYwOHoiIGZpbGw9InVybCgjU1ZHSURfOF8pIi8+PHBhdGggZD0ibTQ4MC4zOTMgNTAuNzE4aC00NTAuNzg2Yy0xNi4zNTEgMC0yOS42MDcgMTMuMjU2LTI5LjYwNyAyOS42MDggMCA4LjI1OCAzLjQxIDEzLjE0OSA5LjQyMyAxOC44MDhsMjIyLjU4NSAyMDkuNDY1YzEyLjkxOCAxMi4xNTYgMzMuMDY2IDEyLjE1NiA0NS45ODQgMGwyMjIuNTg1LTIwOS40NjZjNi4wMTMtNS42NTkgOS40MjMtMTAuNTUgOS40MjMtMTguODA3IDAtMTYuMzUyLTEzLjI1Ni0yOS42MDgtMjkuNjA3LTI5LjYwOHoiIGZpbGw9InVybCgjU1ZHSURfOV8pIi8+PHBhdGggZD0ibTQ3OS43NzUgNTAuNzE4Yy0xLjE3OSAwLTIuMzEzLjQ1LTMuMTcxIDEuMjU3bC0xOTguNjEyIDE4Ni45MDZjLTEyLjkxOCAxMi4xNTYtMzMuMDY2IDEyLjE1Ni00NS45ODQgMGwtMTk4LjYxMS0xODYuOTA1Yy0uODU4LS44MDgtMS45OTMtMS4yNTgtMy4xNzEtMS4yNTgtMTUuMTA3IDAtMjguMjQ4IDExLjA3OS0zMC4wMTggMjYuMDgyLTEuMTIxIDkuNTAzIDIuMzUxIDE4Ljg3MyA5LjIxNiAyNS4zMzNsMjIyLjU4NSAyMDkuNDY1YzEyLjkxOCAxMi4xNTYgMzMuMDY2IDEyLjE1NiA0NS45ODQgMGwyMjIuNTg1LTIwOS40NjVjNi44NjUtNi40NjEgMTAuMzM3LTE1LjgzIDkuMjE2LTI1LjMzMy0xLjc3MS0xNS4wMDMtMTQuOTEyLTI2LjA4Mi0zMC4wMTktMjYuMDgyeiIgZmlsbD0idXJsKCNTVkdJRF8xMF8pIi8+PC9nPjwvc3ZnPg=="
+            alt="ERROR" />
+        </a>
+      </div>
+    </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

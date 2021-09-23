@@ -1,0 +1,39 @@
+/* Inicio de Footer */
+@import "_sizes.scss";
+footer {
+  font-family: "Hahmlet", serif;
+  border-top-style: solid;
+
+  .footerFlex {
+    display: flex;
+    justify-content: center;
+    .footerFlex__item {
+      width: 4rem;
+      padding-left: 25px;
+      height: 5rem;
+    }
+    :hover {
+      transform: translateY(-7px);
+      transition: 0.5s;
+    }
+
+    @media (max-width: #{$mobile}) {
+      justify-content: flex-start;
+    }
+  }
+  /*Animacion Logos Footer*/
+}
+
+/* Up Arrow*/
+
+.arriba {
+  border: 2px solid;
+  background: #ffffff;
+  border-radius: 50%;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Fin Footer */

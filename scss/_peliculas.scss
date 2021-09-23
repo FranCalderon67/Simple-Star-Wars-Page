@@ -1,0 +1,114 @@
+@import "_sizes.scss";
+
+.gridPeliculas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "portada descripcion preview"
+    "imagen texto video";
+  align-items: center;
+  justify-items: center;
+  border: solid 1px #ffffff;
+
+  .gridPeliculas__gridPortada {
+    height: 3rem;
+    align-items: center;
+    grid-area: portada;
+    margin-top: 20px;
+    @media (max-width: #{$laptop}) {
+      display: none;
+    }
+  }
+
+  /*EXTEND*/
+  .gridPeliculas__gridDescripcion {
+    @extend .gridPeliculas__gridPortada;
+    grid-area: descripcion;
+    @media (max-width: #{$laptop}) {
+      display: none;
+    }
+  }
+  .gridPeliculas__gridPreview {
+    @extend .gridPeliculas__gridPortada;
+    grid-area: preview;
+    @media (max-width: #{$laptop}) {
+      display: none;
+    }
+  }
+  .gridPeliculas__gridImagen {
+    grid-area: imagen;
+    @media (max-width: #{$laptop}) {
+      @include fullSize(100%, 100%);
+      flex: 1;
+      border-top: solid 3px #ffffff;
+    }
+    @media (max-width: #{$mobile}) {
+      grid-area: imagen;
+      @include fullSize(100%, 100%);
+      border-top: solid 3px #ffffff;
+    }
+  }
+  .gridPeliculas__gridTexto {
+    font-family: "Hahmlet", serif;
+    word-spacing: 2mm;
+    font-size: 16px;
+    font-weight: 1000;
+    grid-area: texto;
+
+    @media (max-width: #{$laptop}) {
+      font-family: "Hahmlet", serif;
+      font-size: 14px;
+      font-weight: 1000;
+      flex: 1;
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+    }
+    @media (max-width: #{$tablet}) {
+      font-family: "Hahmlet", serif;
+      font-size: 14px;
+      font-weight: 1000;
+      flex: 1;
+    }
+    @media (max-width: #{$mobile}) {
+      font-family: "Hahmlet", serif;
+      font-size: 14px;
+      font-weight: 1000;
+      grid-area: texto;
+      width: fit-content;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .gridPeliculas__gridVideo {
+    grid-area: video;
+    @media (max-width: #{$laptop}) {
+      flex-basis: 100%;
+    }
+    @media (max-width: #{$mobile}) {
+      grid-area: video;
+      width: 100%;
+    }
+  }
+  @media (max-width: #{$laptop}) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: unset;
+    width: 100%;
+  }
+  @media (max-width: #{$mobile}) {
+    display: grid;
+    grid-template-areas:
+      "imagen"
+      "texto"
+      "video";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    border: unset;
+    width: 100%;
+  }
+}
