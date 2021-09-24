@@ -434,6 +434,12 @@ footer {
       display: flex;
       flex-direction: column; } }
 
+.btn-separador {
+  margin: 0 0 0 1rem; }
+  @media (max-width: 425px) {
+    .btn-separador {
+      margin: 1rem 0 0 1rem; } }
+
 .flexContainer {
   display: flex;
   flex-direction: column;
