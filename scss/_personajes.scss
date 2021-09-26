@@ -80,7 +80,9 @@
       }
       @media (max-width: #{$mobile}) {
         padding: 0rem;
-        transform: unset;
+        transform: rotateY(-180deg);
+        font-family: "IM Fell Double Pica", serif;
+        font-size: 9px;
       }
     }
     .cardImg {

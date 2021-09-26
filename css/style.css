@@ -359,7 +359,9 @@ footer {
       @media (max-width: 425px) {
         .flexImg .cardInside .cardBack {
           padding: 0rem;
-          transform: unset; } }
+          transform: rotateY(-180deg);
+          font-family: "IM Fell Double Pica", serif;
+          font-size: 9px; } }
     .flexImg .cardInside .cardImg {
       width: 100%;
       border-radius: 1rem;
