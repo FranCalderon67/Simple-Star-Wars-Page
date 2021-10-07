@@ -12,7 +12,7 @@
     margin: 0 3.5rem 2rem 3.5rem; }
 
 h1 {
-  margin: 2rem 0 2rem 0;
+  margin: 4.5rem 0 6rem 0;
   font-family: "IM Fell Double Pica", serif;
   font-weight: 750;
   text-align: center;
@@ -42,16 +42,21 @@ h1 {
 .nav-link {
   border-left: solid 0.5px #ffffff;
   border-right: solid 0.5px #ffffff; }
+  @media (max-width: 990px) {
+    .nav-link {
+      border-left: unset;
+      border-right: unset;
+      justify-content: center; } }
   @media (max-width: 768px) {
     .nav-link {
       border-left: unset;
       border-right: unset;
-      justify-content: start; } }
+      justify-content: center; } }
   @media (max-width: 425px) {
     .nav-link {
       border-left: unset;
       border-right: unset;
-      justify-content: start; } }
+      justify-content: center; } }
 
 .btn-dark {
   font-size: 25px;
@@ -69,7 +74,9 @@ h1 {
   .gridHead .logo {
     grid-area: logo;
     height: fit-content;
-    z-index: 1; }
+    z-index: 1;
+    height: 200px;
+    margin-top: 2rem; }
 
 .gridContainer {
   display: grid;
@@ -196,21 +203,36 @@ footer {
     align-items: center;
     grid-area: portada;
     margin-top: 20px; }
+    @media (max-width: 1075px) {
+      .gridPeliculas .gridPeliculas__gridPortada, .gridPeliculas .gridPeliculas__gridDescripcion, .gridPeliculas .gridPeliculas__gridPreview {
+        display: none; } }
     @media (max-width: 1024px) {
       .gridPeliculas .gridPeliculas__gridPortada, .gridPeliculas .gridPeliculas__gridDescripcion, .gridPeliculas .gridPeliculas__gridPreview {
         display: none; } }
   .gridPeliculas .gridPeliculas__gridDescripcion {
     grid-area: descripcion; }
+    @media (max-width: 1075px) {
+      .gridPeliculas .gridPeliculas__gridDescripcion {
+        display: none; } }
     @media (max-width: 1024px) {
       .gridPeliculas .gridPeliculas__gridDescripcion {
         display: none; } }
   .gridPeliculas .gridPeliculas__gridPreview {
     grid-area: preview; }
+    @media (max-width: 1075px) {
+      .gridPeliculas .gridPeliculas__gridPreview {
+        display: none; } }
     @media (max-width: 1024px) {
       .gridPeliculas .gridPeliculas__gridPreview {
         display: none; } }
   .gridPeliculas .gridPeliculas__gridImagen {
     grid-area: imagen; }
+    @media (max-width: 1075px) {
+      .gridPeliculas .gridPeliculas__gridImagen {
+        height: 100%;
+        width: 100%;
+        flex: 1;
+        border-top: solid 3px #ffffff; } }
     @media (max-width: 1024px) {
       .gridPeliculas .gridPeliculas__gridImagen {
         height: 100%;
@@ -229,6 +251,14 @@ footer {
     font-size: 16px;
     font-weight: 1000;
     grid-area: texto; }
+    @media (max-width: 1075px) {
+      .gridPeliculas .gridPeliculas__gridTexto {
+        font-family: "Hahmlet", serif;
+        font-size: 14px;
+        font-weight: 1000;
+        flex: 1;
+        margin-left: 1.5rem;
+        margin-right: 1rem; } }
     @media (max-width: 1024px) {
       .gridPeliculas .gridPeliculas__gridTexto {
         font-family: "Hahmlet", serif;
@@ -253,6 +283,10 @@ footer {
         margin-top: 1.5rem; } }
   .gridPeliculas .gridPeliculas__gridVideo {
     grid-area: video; }
+    @media (max-width: 1075px) {
+      .gridPeliculas .gridPeliculas__gridVideo {
+        flex-basis: 100%;
+        width: 80%; } }
     @media (max-width: 1024px) {
       .gridPeliculas .gridPeliculas__gridVideo {
         flex-basis: 100%; } }
@@ -451,7 +485,8 @@ footer {
     width: fit-content; }
   .flexContainer .flexContainer__item-modificador {
     background-color: #000000;
-    margin: 16px; }
+    margin: 16px;
+    border-radius: 0.5rem; }
     @media (max-width: 768px) {
       .flexContainer .flexContainer__item-modificador {
         height: 100%;

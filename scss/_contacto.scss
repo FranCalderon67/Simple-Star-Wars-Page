@@ -13,6 +13,7 @@
   .flexContainer__item-modificador {
     background-color: #000000;
     margin: 16px;
+    border-radius: 0.5rem;
     @media (max-width:#{$tablet}) {
       @include fullSize(100%, 100%);
     }

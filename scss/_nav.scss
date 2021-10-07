@@ -19,15 +19,21 @@
   border-left: solid 0.5px #ffffff;
   border-right: solid 0.5px #ffffff;
 
+  @media (max-width: 990px) {
+    border-left: unset;
+    border-right: unset;
+    justify-content: center;
+  }
+
   @media (max-width: #{$tablet}) {
     border-left: unset;
     border-right: unset;
-    justify-content: start;
+    justify-content: center;
   }
   @media (max-width:#{$mobile}) {
     border-left: unset;
     border-right: unset;
-    justify-content: start;
+    justify-content: center;
   }
 }
 
@@ -50,5 +56,7 @@
     grid-area: logo;
     height: fit-content;
     z-index: 1;
+    height: 200px;
+    margin-top: 2rem;
   }
 }
